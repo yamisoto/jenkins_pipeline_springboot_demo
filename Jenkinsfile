@@ -21,7 +21,7 @@ pipeline {
         }
         stage ('Build') {
             steps {
-                echo "Build Stage is in progress ${mysecret}"
+                echo "Build Stage is in progress ${secret}"
                 echo "param name is ${params.name}"
                 sh 'mvn compile'
             }
